@@ -34,14 +34,14 @@ function App() {
   }
 
   return (
-    <div className=" bg-teal-300 h-screen flex flex-col items-center justify-center">
+    <div className=" bg-zinc-400 min-h-screen flex flex-col items-center justify-center">
       <div className='search'>
-      <input className='w-80 h-10 rounded-lg text-center border-teal-600 border-2' rows='5' id='searchBar' type='text' placeholder='Enter Prompt' value={content}
+      <input className='w-80 h-10 rounded-lg border-zinc-800 border-2' rows='5' id='searchBar' type='text' placeholder='type here...' value={content}
        onChange={event => setContent(event.target.value)} onKeyDown={chat} />
     </div>
-    <button className="mt-5 w-36 h-7 border-teal-600 border-2 rounded-xl bg-white hover:bg-teal-600" onClick={chatButton}>Chat!</button>
+    <button className="mt-5 w-36 h-7 border-zinc-800 border-2 rounded-xl bg-blue-500 hover:bg-zinc-200" onClick={chatButton}>Chat</button>
     {response.length ? 
-    <div className='w-80 text-center mt-5 bg-white border-teal-600 border-2 rounded-xl p-2 '>
+    <div className='w-80 text-center mt-5 bg-zinc-200 border-zinc-800 border-2 rounded-xl p-2 '>
       {response}
     </div>
     : null }
